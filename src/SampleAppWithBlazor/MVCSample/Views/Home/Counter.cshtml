@@ -1,0 +1,11 @@
+﻿@* *ADD*: Add Using Statement *@
+@using BlazorSharedComponents
+
+@{
+    ViewData["Title"] = "Counter";
+}
+<h1>@ViewData["Title"]</h1>
+
+<!--<p>TODO: Add Counter Component</p>-->
+@* *ADD*: Add component *@
+<component type="typeof(CounterComponent)" render-mode="Server" />

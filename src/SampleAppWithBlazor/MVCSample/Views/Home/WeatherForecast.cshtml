@@ -1,0 +1,11 @@
+﻿@* *ADD*: Add Using Statement *@
+@using BlazorSharedComponents
+
+@{
+    ViewData["Title"] = "Weather Forecast";
+}
+<h1>@ViewData["Title"]</h1>
+
+<!--<p>TODO: Add Weather Forecast Component</p>-->
+@* *ADD*: Add component *@
+<component type="typeof(WeatherForecastComponent)" render-mode="ServerPrerendered" param-Forecasts="@ViewBag.Forecasts" />
